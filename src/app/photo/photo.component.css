@@ -1,0 +1,7 @@
+.card-title {
+  word-break: break-all;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  max-width: 25vw;
+}

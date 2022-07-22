@@ -1,0 +1,16 @@
+.grid {
+  background-color: rgb(28, 64, 125);
+}
+
+.spinner-container {
+  background-color: rgb(28, 64, 125);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner {
+
+}

@@ -1,0 +1,8 @@
+<div *ngIf="loading" class="spinner-container">
+  <mat-spinner class="spinner" color="accent"></mat-spinner>
+</div>
+<mat-grid-list *ngIf="!loading" cols="3" class="grid" rowHeight="1:1.2">
+  <mat-grid-tile *ngFor="let photo of photos">
+    <app-photo [imgUrl]="photo.url" [thumbnail]="photo.thumbnailUrl" [title]="photo.title" [id]="photo.id"></app-photo>
+  </mat-grid-tile>
+</mat-grid-list>
