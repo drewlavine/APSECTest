@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 
 import { PhotosListComponent } from './photos-list.component';
 
@@ -8,6 +9,7 @@ describe('PhotosListComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [ HttpClientTestingModule ],
       declarations: [ PhotosListComponent ]
     })
     .compileComponents();
@@ -20,4 +22,8 @@ describe('PhotosListComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have loading as true initialliy', () => {
+    expect(component.loading).toBe(true);
+  })
 });
